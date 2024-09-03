@@ -29,3 +29,7 @@ contract DriversLicenseVerification {
         require(msg.sender == owner, "Access denied: Only owner can perform this action");
         _;
     }
+    // Constructor to set the contract deployer as the owner
+    constructor() {
+        owner = msg.sender;
+    }
