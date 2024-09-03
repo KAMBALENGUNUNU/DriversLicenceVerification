@@ -86,3 +86,9 @@ contract DriversLicenseVerification {
         licenses[_licenseNumber].expiryDate = _newExpiryDate;
         emit LicenseUpdated(_licenseNumber, _newHolderName);
     }
+
+
+    // Function to check if an address is authorized (only the owner in this case)
+    function isAuthorized(address _address) public view returns (bool) {
+        return _address == owner;
+    }
