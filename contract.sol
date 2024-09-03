@@ -92,3 +92,9 @@ contract DriversLicenseVerification {
     function isAuthorized(address _address) public view returns (bool) {
         return _address == owner;
     }
+
+
+    // Fallback function to prevent accidental ether transfers
+    fallback() external payable {
+        revert("This contract does not accept ether");
+    }
