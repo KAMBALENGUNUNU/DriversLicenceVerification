@@ -61,3 +61,12 @@ contract DriversLicenseVerification {
 
         return (license.isValid, license.holderName, license.licenseNumber, license.issueDate, license.expiryDate);
     }
+
+     // Function to revoke a license
+    function revokeLicense(string memory _licenseNumber) public onlyOwner {
+        require(licenses[_licenseNumber].issueDate != 0, "License not found");
+        require(licenses[_licenseNumber].isValid == true, "License already revoked");
+
+        licenses[_licenseNumber].isValid = false;
+        emit LicenseRevoked(_licenseNumber);
+    }
