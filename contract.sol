@@ -78,3 +78,11 @@ contract DriversLicenseVerification {
         string memory _newHolderName,
         uint256 _newExpiryDate
     ) public onlyOwner {
+          require(licenses[_licenseNumber].issueDate != 0, "License not found");
+        require(licenses[_licenseNumber].isValid == true, "Cannot update revoked license");
+        require(_newExpiryDate > licenses[_licenseNumber].issueDate, "New expiry date must be after issue date");
+
+        licenses[_licenseNumber].holderName = _newHolderName;
+        licenses[_licenseNumber].expiryDate = _newExpiryDate;
+        emit LicenseUpdated(_licenseNumber, _newHolderName);
+    }
