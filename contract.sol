@@ -70,3 +70,11 @@ contract DriversLicenseVerification {
         licenses[_licenseNumber].isValid = false;
         emit LicenseRevoked(_licenseNumber);
     }
+
+
+    // Function to update license details
+    function updateLicense(
+        string memory _licenseNumber,
+        string memory _newHolderName,
+        uint256 _newExpiryDate
+    ) public onlyOwner {
