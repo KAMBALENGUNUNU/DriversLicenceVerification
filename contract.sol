@@ -53,3 +53,11 @@ contract DriversLicenseVerification {
 
         emit LicenseRegistered(_licenseNumber, _holderName);
     }
+
+     // Function to verify the authenticity of a license
+    function verifyLicense(string memory _licenseNumber) public view returns (bool, string memory, string memory, uint256, uint256) {
+        License memory license = licenses[_licenseNumber];
+        require(license.issueDate != 0, "License not found");
+
+        return (license.isValid, license.holderName, license.licenseNumber, license.issueDate, license.expiryDate);
+    }
