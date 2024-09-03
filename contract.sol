@@ -43,3 +43,13 @@ contract DriversLicenseVerification {
     ) public onlyOwner {
         require(licenses[_licenseNumber].issueDate == 0, "License already registered");
         require(_expiryDate > _issueDate, "Expiry date must be after issue date");
+         licenses[_licenseNumber] = License({
+            holderName: _holderName,
+            licenseNumber: _licenseNumber,
+            issueDate: _issueDate,
+            expiryDate: _expiryDate,
+            isValid: true
+        });
+
+        emit LicenseRegistered(_licenseNumber, _holderName);
+    }
