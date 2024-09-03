@@ -21,4 +21,11 @@ contract DriversLicenseVerification {
     
     // Event emitted when a license is revoked
     event LicenseRevoked(string licenseNumber);
-    
+     // Event emitted when a license is updated
+    event LicenseUpdated(string licenseNumber, string holderName);
+
+    // Modifier to restrict access to the owner
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Access denied: Only owner can perform this action");
+        _;
+    }
