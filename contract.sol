@@ -33,3 +33,13 @@ contract DriversLicenseVerification {
     constructor() {
         owner = msg.sender;
     }
+
+       // Function to register a new license
+    function registerLicense(
+        string memory _holderName,
+        string memory _licenseNumber,
+        uint256 _issueDate,
+        uint256 _expiryDate
+    ) public onlyOwner {
+        require(licenses[_licenseNumber].issueDate == 0, "License already registered");
+        require(_expiryDate > _issueDate, "Expiry date must be after issue date");
