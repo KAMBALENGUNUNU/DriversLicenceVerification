@@ -98,3 +98,8 @@ contract DriversLicenseVerification {
     fallback() external payable {
         revert("This contract does not accept ether");
     }
+
+    receive() external payable {
+        revert("This contract does not accept ether");
+    }
+}
