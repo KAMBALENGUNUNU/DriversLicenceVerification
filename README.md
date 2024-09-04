@@ -88,3 +88,6 @@ This smart contract provides transparency, security, and immutability, ensuring 
 - **Access Control**: Only the contract owner (or a designated authorized entity) can register, update, or revoke licenses. This is enforced through the `onlyOwner` modifier.
 - **Immutability**: Key details of a license, such as the license number and issue date, cannot be altered once registered. Only the holder's name and expiry date can be updated.
 - **Data Integrity**: The contract ensures that licenses cannot be registered with invalid dates, and that updates adhere to the same constraints.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
