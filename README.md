@@ -52,4 +52,8 @@ This smart contract provides transparency, security, and immutability, ensuring 
 2. **Compile the Contract**:
     - Use Remix IDE, Truffle, or Hardhat to compile the contract.
     - Ensure you are using Solidity version `^0.8.0`.
+
+3. **Deploy the Contract**:
+    - Deploy the contract to an Ethereum test network (e.g., Ropsten, Rinkeby) or a local blockchain using tools like Remix or Truffle.
+    - Note the contract address after deployment.
     
