@@ -22,3 +22,8 @@ The **Driver's License Verification** smart contract is designed to manage the l
 - **Update** certain details, such as the holder's name or the expiry date.
 
 This smart contract provides transparency, security, and immutability, ensuring that driver's license data cannot be tampered with and can be verified by anyone.
+## Features
+
+- **Registration of Licenses**: Authorized users can register new driver's licenses.
+- **Verification**: Anyone can verify the authenticity of a license by querying the blockchain.
+- **Revocation**: Authorized users can revoke a license, marking it as invalid.
