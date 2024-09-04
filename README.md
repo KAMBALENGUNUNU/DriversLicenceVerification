@@ -75,3 +75,8 @@ This smart contract provides transparency, security, and immutability, ensuring 
 
 3. **Revoke a License**:
     - Call the `revokeLicense()` function with the `_licenseNumber` parameter to mark the license as invalid.
+4. **Update License Information**:
+    - Call the `updateLicense()` function with the following parameters:
+      - `_licenseNumber`: The license number to be updated.
+      - `_newHolderName`: The new name of the holder (if applicable).
+      - `_newExpiryDate`: The new expiry date.
