@@ -27,3 +27,6 @@ This smart contract provides transparency, security, and immutability, ensuring 
 - **Registration of Licenses**: Authorized users can register new driver's licenses.
 - **Verification**: Anyone can verify the authenticity of a license by querying the blockchain.
 - **Revocation**: Authorized users can revoke a license, marking it as invalid.
+- **Updating Information**: Authorized users can update certain details of a license.
+- **Access Control**: Only the contract owner can register, update, or revoke licenses.
+- **Events**: Emits events for registration, revocation, and updates for transparency.
