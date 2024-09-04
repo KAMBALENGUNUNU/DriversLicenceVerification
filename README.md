@@ -30,3 +30,12 @@ This smart contract provides transparency, security, and immutability, ensuring 
 - **Updating Information**: Authorized users can update certain details of a license.
 - **Access Control**: Only the contract owner can register, update, or revoke licenses.
 - **Events**: Emits events for registration, revocation, and updates for transparency.
+- **Updating Information**: Authorized users can update certain details of a license.
+- **Access Control**: Only the contract owner can register, update, or revoke licenses.
+- **Events**: Emits events for registration, revocation, and updates for transparency.
+### Contract Structure
+
+- **License Struct**: Stores details of each driver's license, including the holder's name, license number, issue date, expiry date, and validity status.
+- **Mappings**: The contract uses mappings to efficiently store and retrieve licenses by their license number.
+- **Modifiers**: The `onlyOwner` modifier restricts certain functions to the contract owner for security purposes.
+- **Events**: `LicenseRegistered`, `LicenseRevoked`, and `LicenseUpdated` events are emitted to log actions taken on the licenses.
