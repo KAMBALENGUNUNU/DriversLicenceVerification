@@ -48,3 +48,8 @@ This smart contract provides transparency, security, and immutability, ensuring 
     git clone https://github.com/KAMBALENGUNUNU/drivers-license-verification.git
     cd drivers-license-verification
     ```
+  
+2. **Compile the Contract**:
+    - Use Remix IDE, Truffle, or Hardhat to compile the contract.
+    - Ensure you are using Solidity version `^0.8.0`.
+    
