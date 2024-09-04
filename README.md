@@ -91,3 +91,6 @@ This smart contract provides transparency, security, and immutability, ensuring 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+---
+
+This smart contract is designed to provide a simple, secure, and transparent way to manage driver's licenses using blockchain technology. If you have any questions or need further assistance, feel free to open an issue or contribute to the project.
