@@ -18,3 +18,7 @@ This project implements a simple smart contract in Solidity that allows a compan
 The **Driver's License Verification** smart contract is designed to manage the lifecycle of driver's licenses. It allows authorized entities to:
 - **Register** new licenses with holder details and validity periods.
 - **Verify** the authenticity and validity of any registered license.
+- **Revoke** a license if it is no longer valid.
+- **Update** certain details, such as the holder's name or the expiry date.
+
+This smart contract provides transparency, security, and immutability, ensuring that driver's license data cannot be tampered with and can be verified by anyone.
