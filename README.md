@@ -64,3 +64,11 @@ This smart contract provides transparency, security, and immutability, ensuring 
       - `_licenseNumber`: The unique license number.
       - `_issueDate`: The Unix timestamp representing the issue date.
       - `_expiryDate`: The Unix timestamp representing the expiry date.    
+
+2. **Verify a License**:
+    - Call the `verifyLicense()` function with the `_licenseNumber` parameter.
+    - The function returns:
+      - Whether the license is valid.
+      - The holder's name.
+      - The license number.
+      - The issue date and expiry date.      
