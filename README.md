@@ -39,3 +39,12 @@ This smart contract provides transparency, security, and immutability, ensuring 
 - **Mappings**: The contract uses mappings to efficiently store and retrieve licenses by their license number.
 - **Modifiers**: The `onlyOwner` modifier restricts certain functions to the contract owner for security purposes.
 - **Events**: `LicenseRegistered`, `LicenseRevoked`, and `LicenseUpdated` events are emitted to log actions taken on the licenses.
+### How to Use
+
+#### Deployment
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/KAMBALENGUNUNU/drivers-license-verification.git
+    cd drivers-license-verification
+    ```
