@@ -71,4 +71,7 @@ This smart contract provides transparency, security, and immutability, ensuring 
       - Whether the license is valid.
       - The holder's name.
       - The license number.
-      - The issue date and expiry date.      
+      - The issue date and expiry date.  
+
+3. **Revoke a License**:
+    - Call the `revokeLicense()` function with the `_licenseNumber` parameter to mark the license as invalid.
