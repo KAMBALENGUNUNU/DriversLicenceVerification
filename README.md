@@ -56,4 +56,11 @@ This smart contract provides transparency, security, and immutability, ensuring 
 3. **Deploy the Contract**:
     - Deploy the contract to an Ethereum test network (e.g., Ropsten, Rinkeby) or a local blockchain using tools like Remix or Truffle.
     - Note the contract address after deployment.
-    
+#### Interacting with the Contract
+
+1. **Register a License**:
+    - Call the `registerLicense()` function with the following parameters:
+      - `_holderName`: The name of the license holder.
+      - `_licenseNumber`: The unique license number.
+      - `_issueDate`: The Unix timestamp representing the issue date.
+      - `_expiryDate`: The Unix timestamp representing the expiry date.    
